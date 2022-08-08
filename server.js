@@ -132,6 +132,8 @@ export default function(opt) {
             return;
         }
 
+        console.log({clientId});
+
         const client = manager.getClient(clientId);
         if (!client) {
             res.statusCode = 404;
@@ -154,6 +156,8 @@ export default function(opt) {
             socket.destroy();
             return;
         }
+
+        console.log({clientId});
 
         const client = manager.getClient(clientId);
         if (!client) {
